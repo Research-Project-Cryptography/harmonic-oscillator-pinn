@@ -1,42 +1,19 @@
-[[source]]
-url = "https://pypi.org/simple"
-verify_ssl = true
-name = "pypi"
-
-[[source]]
-url = "https://download.pytorch.org/whl/cu124"
-verify_ssl = true
-name = "downloadpytorch"
-
-[[source]]
-url = "https://download.pytorch.org/whl/cu124"
-verify_ssl = true
-name = "downloadpytorch"
-
-[[source]]
-url = "https://download.pytorch.org/whl/cu124"
-verify_ssl = true
-name = "downloadpytorch"
-
-[packages]
-numpy = "*"
-scikit-learn = "*"
-tensorflow = "*"
-pandas = "*"
-matplotlib = "*"
-qiskit = "*"
-pylatexenc = "*"
-pennylane = "*"
-jupyter = "*"
-jupyterlab = "<5.0.0a0,>=4.0.0"
-jupyterlab-lsp = "*"
-python-lsp-server = {extras = ["all"], version = "*"}
-pennylane-lightning = {extras = ["kokkos"], version = "*"}
-torch = {version = "*", index = "downloadpytorch"}
-torchvision = {version = "*", index = "downloadpytorch"}
-torchaudio = {version = "*", index = "downloadpytorch"}
-custatevec-cu12 = "*"
-pennylane-lightning-gpu = "*"
-
 [requires]
 python_version = "3.10"
+
+[packages]
+numpy = "==2.2.6"
+pandas = "==2.3.3"
+matplotlib = "==3.10.8"
+pennylane = "==0.42.3"
+pennylane-lightning = "*"
+torch = "==2.10.0"
+pylatexenc = "*"
+scikit-learn = "*"
+jupyter = "*"
+jupyterlab = "*"
+tqdm = "*"
+dash = {extras = ["complete"], version = "*"}
+dask = {extras = ["complete"], version = "*"}
+
+[dev-packages]

@@ -42,7 +42,7 @@ class Hybrid_QN(nn.Module):
         }
 
         qc = self.quantum_circuit(wires = self.wires, rot=ROTATION)
-        self.q_node = qml.QNode(qc, Q_DEVICE, expansion_strategy='gradient')
+        self.q_node = qml.QNode(qc, Q_DEVICE)
 
 
         self.input_layer= nn.Linear(INPUT_DIM, N_QUBITS)
@@ -75,20 +75,16 @@ class Hybrid_QN(nn.Module):
             return [qml.expval(qml.PauliZ(wires=w)) for w in wires]
         return _quantum_circuit
     
-    def draw_circuit(self, fontsize=20, style='pennylane', expansion_strategy='gradient', scale=None, title=None, decimals=2):
+    def draw_circuit(self, fontsize=20, style='pennylane', scale=None, title=None, decimals=2):
+        data_in = torch.linspace(1, 2, len(self.wires))
 
-        data_in = torch.linspace(1,2, len(self.wires)) # Not real data, it is for visualise circuit only
-        
         @torch.no_grad()
         def _draw_circuit(*args, **kwargs):
-            nonlocal fontsize, style, expansion_strategy, scale, title
+            nonlocal fontsize, style, scale, title
             qml.drawer.use_style(style)
-            if expansion_strategy is None:
-                expansion_strategy = self.q_node.expansion_strategy
-            fig, ax = qml.draw_mpl(self.q_node, decimals=decimals, expansion_strategy=expansion_strategy)(*args, **kwargs)
+            fig, ax = qml.draw_mpl(self.q_node, decimals=decimals)(*args, **kwargs)
             if scale is not None:
-                dpi = fig.get_dpi()
-                fig.set_dpi(dpi*scale)
+                fig.set_dpi(fig.get_dpi() * scale)
             if title is not None:
                 fig.suptitle(title, fontsize=fontsize)
             plt.show()
@@ -99,7 +95,8 @@ class Hybrid_QN(nn.Module):
         x = self.quantum_layer(x)
         x = self.output_layer(x)
         return x
-    
+
+
 class Pure_QN(nn.Module):
     def __init__(self, DEVICE, N_INPUT, N_QUBITS, N_INPUT_WIRES, N_LAYER, N_OUTPUT_WIRES, ROTATION= 'Ry'):
         super().__init__()
@@ -121,7 +118,7 @@ class Pure_QN(nn.Module):
 
         qc = self.quantum_circuit(wires=wires, input_wires=N_INPUT_WIRES, output_wires=N_OUTPUT_WIRES, rot=ROTATION)
 
-        q_node = qml.QNode(qc, DEVICE, expansion_strategy='gradient')
+        q_node = qml.QNode(qc, DEVICE)
         self.q_node = q_node
 
         # Quantum layer and model
@@ -155,20 +152,16 @@ class Pure_QN(nn.Module):
             return [qml.expval(qml.PauliZ(wires=w)) for w in output_wires]
         return _quantum_circuit
     
-    def draw_circuit(self, fontsize=20, style='pennylane', expansion_strategy='gradient', scale=None, title=None, decimals=2):
+    def draw_circuit(self, fontsize=20, style='pennylane', scale=None, title=None, decimals=2):
+        data_in = torch.linspace(1, 2, len(self.N_INPUT_WIRES))
 
-        data_in = torch.linspace(1,2, len(self.N_INPUT_WIRES)) # Not real data, it is for visualise circuit only
-        
         @torch.no_grad()
         def _draw_circuit(*args, **kwargs):
-            nonlocal fontsize, style, expansion_strategy, scale, title
+            nonlocal fontsize, style, scale, title
             qml.drawer.use_style(style)
-            if expansion_strategy is None:
-                expansion_strategy = self.q_node.expansion_strategy
-            fig, ax = qml.draw_mpl(self.q_node, decimals=decimals, expansion_strategy=expansion_strategy)(*args, **kwargs)
+            fig, ax = qml.draw_mpl(self.q_node, decimals=decimals)(*args, **kwargs)
             if scale is not None:
-                dpi = fig.get_dpi()
-                fig.set_dpi(dpi*scale)
+                fig.set_dpi(fig.get_dpi() * scale)
             if title is not None:
                 fig.suptitle(title, fontsize=fontsize)
             plt.show()
