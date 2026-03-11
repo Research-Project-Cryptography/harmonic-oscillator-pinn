@@ -71,7 +71,10 @@ def _quantum_device(wires: int, device: str):
     if device != "cuda":
         return _default_qubit_device(wires)
     try:
-        return qml.device("lightning.gpu", wires=wires)
+        d = qml.device("lightning.gpu", wires=wires)
+        import sys
+        print("Quantum backend: lightning.gpu (GPU)", file=sys.stderr, flush=True)
+        return d
     except Exception:
         return _default_qubit_device(wires)
 
@@ -110,15 +113,20 @@ def run_training(exp: ExperimentConfig) -> pd.DataFrame:
 
     dataset = generate_dataset(exp.dataset)
     model = build_model(exp.model, exp.device)
+    dev = exp.device
+    if dev == "cuda" and not torch.cuda.is_available():
+        dev = "cpu"
 
-    t_data        = dataset["t_data"]
-    x_data        = dataset["x_data"]
-    t_untrained   = dataset["t_untrained"]
-    x_untrained   = dataset["x_untrained"]
-    t_physics     = dataset["t_physics"]
-    t_boundary    = dataset["t_boundary"]
-    t_test        = dataset["t_test"]
-    x_test_exact  = dataset["x_test_exact"]
+    # Keep model and all tensors on the same device to avoid per-step CPU↔GPU sync
+    model = model.to(dev)
+    t_data        = dataset["t_data"].to(dev)
+    x_data        = dataset["x_data"].to(dev)
+    t_untrained   = dataset["t_untrained"].to(dev)
+    x_untrained   = dataset["x_untrained"].to(dev)
+    t_physics     = dataset["t_physics"].to(dev)
+    t_boundary    = dataset["t_boundary"].to(dev)
+    t_test        = dataset["t_test"].to(dev)
+    x_test_exact  = dataset["x_test_exact"].to(dev)
     t_cutoff      = dataset["t_cutoff"]
     k = exp.dataset.k
 
@@ -128,7 +136,7 @@ def run_training(exp: ExperimentConfig) -> pd.DataFrame:
     plot_title = (f"{exp.model.name}  |  {exp.dataset.name}  |  "
                   f"{sweep_tag(exp.output_dir)}")
 
-    mu = torch.nn.Parameter(torch.zeros(1, requires_grad=True))
+    mu = torch.nn.Parameter(torch.zeros(1, requires_grad=True, device=dev))
 
     if exp.training.optimizer == "adam":
         optimizer = torch.optim.Adam(
@@ -243,9 +251,9 @@ def compute_eval_metrics(
     (extrap zone: correct=TP, wrong=FN; train zone: correct=TN, wrong=FP), then precision, recall, F1.
     """
     with torch.no_grad():
-        pred = model(t_test).numpy().flatten()
-    true = x_test_exact.numpy().flatten()
-    t_flat = t_test.numpy().flatten()
+        pred = model(t_test).cpu().numpy().flatten()
+    true = x_test_exact.cpu().numpy().flatten()
+    t_flat = t_test.cpu().numpy().flatten()
 
     # Split into train zone (t <= t_cutoff) and extrapolation zone (t > t_cutoff)
     in_extrap = t_flat > t_cutoff

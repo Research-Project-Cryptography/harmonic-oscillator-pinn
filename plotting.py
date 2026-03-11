@@ -38,31 +38,35 @@ def plot_snapshot(
     title: str,
 ) -> None:
     """Plot train data (green), untrained data (blue), exact solution (grey), cutoff line, and model inference (purple)."""
+    device = next(model.parameters()).device
     t_dense = torch.linspace(
-        float(t_test.min()), float(t_test.max()), 500
+        float(t_test.min()), float(t_test.max()), 500, device=device
     ).view(-1, 1)
 
     with torch.no_grad():
-        x_pred = model(t_dense).detach().numpy().flatten()
+        x_pred = model(t_dense).detach().cpu().numpy().flatten()
+
+    def _numpy(t: torch.Tensor):
+        return t.detach().cpu().numpy().flatten()
 
     fig, ax = plt.subplots(figsize=(10, 5))
 
     ax.plot(
-        t_test.numpy().flatten(), x_test_exact.numpy().flatten(),
+        _numpy(t_test), _numpy(x_test_exact),
         color="gray", linewidth=0.8, alpha=0.7, label="exact solution", zorder=1,
     )
     ax.scatter(
-        t_untrained.numpy().flatten(), x_untrained.numpy().flatten(),
+        _numpy(t_untrained), _numpy(x_untrained),
         color="steelblue", s=8, alpha=0.5, label="untrained data", zorder=2,
     )
     ax.scatter(
-        t_data.detach().numpy().flatten(), x_data.detach().numpy().flatten(),
+        _numpy(t_data), _numpy(x_data),
         color="green", s=24, alpha=0.9, label="train data", zorder=3,
     )
     ax.axvline(t_cutoff, color="gray", linestyle="--", linewidth=1.0,
                alpha=0.8, label=f"cutoff t={t_cutoff:.2f}", zorder=0)
     ax.plot(
-        t_dense.numpy().flatten(), x_pred,
+        _numpy(t_dense), x_pred,
         color="mediumpurple", linewidth=1.2, label="inference", zorder=4,
     )
 
