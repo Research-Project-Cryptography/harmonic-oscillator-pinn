@@ -80,9 +80,11 @@ def run_one_job(payload: dict, skip_existing: bool) -> dict:
     """Run a single experiment (called on a Dask worker).
 
     Accepts a plain-dict payload and reconstructs configs locally so serialization
-    does not depend on client/worker environment match. Returns a small dict:
-    ok, label, sweep, skip, error, elapsed_s.
+    does not depend on client/worker environment match. Device is chosen per
+    worker: GPU if torch.cuda.is_available(), else CPU (so Linux with GPU uses
+    it, Mac uses CPU). Returns a small dict: ok, label, sweep, skip, error, elapsed_s.
     """
+    import torch
     t0 = time.perf_counter()
     model_cfg = ModelConfig(**payload["model"])
     ds_cfg = DatasetConfig(**payload["dataset"])
@@ -92,15 +94,16 @@ def run_one_job(payload: dict, skip_existing: bool) -> dict:
     sweep = payload["sweep"]
     label = f"{model_cfg.name}/{ds_cfg.name}/s{seed}"
 
-    exp = make_experiment(model=model_cfg, dataset=ds_cfg, training=tc, seed=seed, output_dir=out)
+    device = "cuda" if torch.cuda.is_available() else "cpu"
+    exp = make_experiment(model=model_cfg, dataset=ds_cfg, training=tc, seed=seed, output_dir=out, device=device)
 
     if skip_existing and result_exists(exp, min_rows=tc.iterations):
         return {"ok": True, "label": label, "sweep": sweep, "skip": True, "error": None, "elapsed_s": time.perf_counter() - t0}
 
     try:
         seed_everything(seed)
-        model = build_model(model_cfg)
         df, eval_metrics = run_training(exp)
+        model = build_model(model_cfg, device=device)
         save_results(df, exp, model, eval_metrics)
         return {"ok": True, "label": label, "sweep": sweep, "skip": False, "error": None, "elapsed_s": time.perf_counter() - t0}
     except Exception as e:
