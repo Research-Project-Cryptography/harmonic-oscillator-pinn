@@ -39,8 +39,10 @@ import argparse
 import os
 import sys
 import time
+from dataclasses import asdict
 from pathlib import Path
 
+from experiment_config import DatasetConfig, ModelConfig, TrainingConfig
 from run_all import (
     ALL_SWEEPS,
     N_MAIN_SEEDS,
@@ -59,18 +61,35 @@ from run_experiment import (
 from utils import seed_everything
 
 
-def run_one_job(job: dict, skip_existing: bool) -> dict:
+def job_to_payload(job: dict) -> dict:
+    """Convert a job (with dataclass configs) to a plain-dict payload for Dask.
+
+    Avoids deserialization errors when client and workers have different environments.
+    """
+    return {
+        "model": asdict(job["model"]),
+        "dataset": asdict(job["dataset"]),
+        "tc": asdict(job["tc"]),
+        "seed": job["seed"],
+        "out": job["out"],
+        "sweep": job["sweep"],
+    }
+
+
+def run_one_job(payload: dict, skip_existing: bool) -> dict:
     """Run a single experiment (called on a Dask worker).
 
-    Returns a small dict: ok, label, sweep, skip, error, elapsed_s.
+    Accepts a plain-dict payload and reconstructs configs locally so serialization
+    does not depend on client/worker environment match. Returns a small dict:
+    ok, label, sweep, skip, error, elapsed_s.
     """
     t0 = time.perf_counter()
-    model_cfg = job["model"]
-    ds_cfg = job["dataset"]
-    tc = job["tc"]
-    seed = job["seed"]
-    out = job["out"]
-    sweep = job["sweep"]
+    model_cfg = ModelConfig(**payload["model"])
+    ds_cfg = DatasetConfig(**payload["dataset"])
+    tc = TrainingConfig(**payload["tc"])
+    seed = payload["seed"]
+    out = payload["out"]
+    sweep = payload["sweep"]
     label = f"{model_cfg.name}/{ds_cfg.name}/s{seed}"
 
     exp = make_experiment(model=model_cfg, dataset=ds_cfg, training=tc, seed=seed, output_dir=out)
@@ -132,7 +151,9 @@ def main() -> None:
     print(f"Connected to scheduler: {args.scheduler}")
     print(f"Dashboard: {client.dashboard_link}\n")
 
-    futures = [client.submit(run_one_job, job, skip_existing) for job in jobs]
+    # Serialize jobs to plain dicts so workers don't need to deserialize project dataclasses
+    payloads = [job_to_payload(job) for job in jobs]
+    futures = [client.submit(run_one_job, p, skip_existing) for p in payloads]
     counts = {"run": 0, "skip": 0, "fail": 0}
     wall_start = time.perf_counter()
 
