@@ -57,10 +57,29 @@ from utils import (
 # Model factory
 # ---------------------------------------------------------------------------
 
+def _default_qubit_device(wires: int):
+    """Default CPU simulator (always available)."""
+    return qml.device("default.qubit", wires=wires)
+
+
+def _quantum_device(wires: int, device: str):
+    """Pick PennyLane device: lightning.gpu on CUDA when available, else default.qubit.
+
+    lightning.gpu (pennylane-lightning-gpu) is Linux-only and uses the NVIDIA GPU
+    for the quantum circuit; much faster than default.qubit for hybrid models.
+    """
+    if device != "cuda":
+        return _default_qubit_device(wires)
+    try:
+        return qml.device("lightning.gpu", wires=wires)
+    except Exception:
+        return _default_qubit_device(wires)
+
+
 def build_model(cfg: ModelConfig, device: str = "cpu") -> nn.Module:
     """Instantiate a model from its config."""
     if cfg.model_type == "hybrid_qn":
-        q_device = qml.device("default.qubit", wires=cfg.n_qubits)
+        q_device = _quantum_device(cfg.n_qubits, device)
         model = Hybrid_QN(
             Q_DEVICE=q_device,
             INPUT_DIM=cfg.input_dim,
