@@ -1,0 +1,12 @@
+Model: PIML_2209
+Total trainable parameters: 2209
+Layer                                    Shape                   Count
+----------------------------------------------------------------------
+fcs.0.weight                             (32, 1)                    32
+fcs.0.bias                               (32,)                      32
+fch.0.0.weight                           (32, 32)                 1024
+fch.0.0.bias                             (32,)                      32
+fch.1.0.weight                           (32, 32)                 1024
+fch.1.0.bias                             (32,)                      32
+fce.weight                               (1, 32)                    32
+fce.bias                                 (1,)                        1
