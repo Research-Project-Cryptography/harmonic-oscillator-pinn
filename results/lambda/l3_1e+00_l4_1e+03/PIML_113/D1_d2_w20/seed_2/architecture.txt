@@ -1,0 +1,18 @@
+Model: PIML_113
+Total trainable parameters: 113
+Layer                                    Shape                   Count
+----------------------------------------------------------------------
+fcs.0.weight                             (4, 1)                      4
+fcs.0.bias                               (4,)                        4
+fch.0.0.weight                           (4, 4)                     16
+fch.0.0.bias                             (4,)                        4
+fch.1.0.weight                           (4, 4)                     16
+fch.1.0.bias                             (4,)                        4
+fch.2.0.weight                           (4, 4)                     16
+fch.2.0.bias                             (4,)                        4
+fch.3.0.weight                           (4, 4)                     16
+fch.3.0.bias                             (4,)                        4
+fch.4.0.weight                           (4, 4)                     16
+fch.4.0.bias                             (4,)                        4
+fce.weight                               (1, 4)                      4
+fce.bias                                 (1,)                        1
