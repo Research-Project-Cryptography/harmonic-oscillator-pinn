@@ -1,0 +1,80 @@
+
+======================================================================
+  MAIN RESULTS  (mean ± std across seeds)
+======================================================================
+  PIML_113 | D1_d2_w20                           loss=305.50±0.00  μ_err=0.683±0.000  t/step=1.0ms  n=5
+  PIML_113 | D2_d1.5_w30                         loss=1424.77±0.00  μ_err=1.224±0.000  t/step=1.0ms  n=5
+  PIML_113 | D3_d3_w30                           loss=1131.88±0.00  μ_err=1.642±0.000  t/step=1.0ms  n=5
+  PIML_113 | D4_d4_w40                           loss=3801.14±0.00  μ_err=8.968±0.000  t/step=1.2ms  n=5
+  PIML_2209 | D1_d2_w20                          loss=715.40±0.00  μ_err=0.514±0.000  t/step=1.2ms  n=5
+  PIML_2209 | D2_d1.5_w30                        loss=9919.95±0.00  μ_err=0.080±0.000  t/step=1.1ms  n=5
+  PIML_2209 | D3_d3_w30                          loss=113.86±0.00  μ_err=0.092±0.000  t/step=1.2ms  n=5
+  PIML_2209 | D4_d4_w40                          loss=1044.69±0.00  μ_err=0.192±0.000  t/step=1.1ms  n=5
+  PIQML_109 | D1_d2_w20                          loss=96.45±0.00  μ_err=0.021±0.000  t/step=134.2ms  n=5
+  PIQML_109 | D2_d1.5_w30                        loss=57.38±0.00  μ_err=0.019±0.000  t/step=135.4ms  n=5
+  PIQML_109 | D3_d3_w30                          loss=62.99±0.00  μ_err=0.045±0.000  t/step=142.4ms  n=5
+  PIQML_109 | D4_d4_w40                          loss=340.60±171.78  μ_err=0.036±0.021  t/step=183.0ms  n=5
+
+======================================================================
+  CONVERGENCE  (first step where loss ≤ 5% of initial)
+======================================================================
+  PIML_113 | D1_d2_w20                           convergence step: 1202±0
+  PIML_113 | D2_d1.5_w30                         convergence step: 9215±0
+  PIML_113 | D3_d3_w30                           convergence step: 4007±0
+  PIML_113 | D4_d4_w40                           convergence step: 2405±0
+  PIML_2209 | D1_d2_w20                          convergence step: 408±0
+  PIML_2209 | D2_d1.5_w30                        convergence step: 1584±0
+  PIML_2209 | D3_d3_w30                          convergence step: 1794±0
+  PIML_2209 | D4_d4_w40                          convergence step: 3762±0
+  PIQML_109 | D1_d2_w20                          convergence step: 405±0
+  PIQML_109 | D2_d1.5_w30                        convergence step: 930±0
+  PIQML_109 | D3_d3_w30                          convergence step: 824±0
+  PIQML_109 | D4_d4_w40                          convergence step: 1858±291
+
+======================================================================
+  TIMING SUMMARY  (total training time per run)
+======================================================================
+  PIML_113 | D1_d2_w20                           0.5 ± 0.0 min
+  PIML_113 | D2_d1.5_w30                         0.5 ± 0.0 min
+  PIML_113 | D3_d3_w30                           0.5 ± 0.0 min
+  PIML_113 | D4_d4_w40                           0.5 ± 0.0 min
+  PIML_2209 | D1_d2_w20                          0.6 ± 0.0 min
+  PIML_2209 | D2_d1.5_w30                        0.5 ± 0.0 min
+  PIML_2209 | D3_d3_w30                          0.5 ± 0.0 min
+  PIML_2209 | D4_d4_w40                          0.5 ± 0.0 min
+  PIQML_109 | D1_d2_w20                          70.5 ± 0.0 min
+  PIQML_109 | D2_d1.5_w30                        70.3 ± 0.4 min
+  PIQML_109 | D3_d3_w30                          70.2 ± 0.8 min
+  PIQML_109 | D4_d4_w40                          73.3 ± 6.9 min
+
+======================================================================
+  LAMBDA SENSITIVITY  (best λ combination per model/dataset)
+======================================================================
+  PIML_113 | D1_d2_w20                           best: λ3=1.0e-01 λ4=1.0e+05  loss=250.11
+  PIML_113 | D2_d1.5_w30                         best: λ3=1.0e-01 λ4=1.0e+03  loss=1295.48
+  PIML_2209 | D1_d2_w20                          best: λ3=1.0e-01 λ4=1.0e+05  loss=147.84
+  PIML_2209 | D2_d1.5_w30                        best: λ3=1.0e-01 λ4=1.0e+05  loss=287.47
+  PIQML_109 | D1_d2_w20                          best: λ3=1.0e+01 λ4=1.0e+03  loss=11.29
+  PIQML_109 | D2_d1.5_w30                        best: λ3=1.0e+00 λ4=1.0e+05  loss=113.82
+
+======================================================================
+  COMPONENT ABLATION  (final loss by variant)
+======================================================================
+  PIML_113 | D1_d2_w20 | combined                loss=367.59±0.00  μ_err=0.716±0.000
+  PIML_113 | D1_d2_w20 | data_only               loss=27.03±0.00  μ_err=4.000±0.000
+  PIML_113 | D1_d2_w20 | physics_only            loss=0.00±0.00  μ_err=4.391±0.000
+  PIML_113 | D2_d1.5_w30 | combined              loss=11439.80±0.00  μ_err=5.185±0.000
+  PIML_113 | D2_d1.5_w30 | data_only             loss=32.55±0.00  μ_err=3.000±0.000
+  PIML_113 | D2_d1.5_w30 | physics_only          loss=0.00±0.00  μ_err=3.285±0.000
+  PIML_2209 | D1_d2_w20 | combined               loss=120.42±0.00  μ_err=0.093±0.000
+  PIML_2209 | D1_d2_w20 | data_only              loss=41.59±0.00  μ_err=4.000±0.000
+  PIML_2209 | D1_d2_w20 | physics_only           loss=0.02±0.00  μ_err=4.550±0.000
+  PIML_2209 | D2_d1.5_w30 | combined             loss=2806.12±0.00  μ_err=0.911±0.000
+  PIML_2209 | D2_d1.5_w30 | data_only            loss=1.45±0.00  μ_err=3.000±0.000
+  PIML_2209 | D2_d1.5_w30 | physics_only         loss=0.05±0.00  μ_err=3.422±0.000
+  PIQML_109 | D1_d2_w20 | combined               loss=77.60±0.00  μ_err=0.093±0.000
+  PIQML_109 | D1_d2_w20 | data_only              loss=41.78±0.00  μ_err=4.000±0.000
+  PIQML_109 | D1_d2_w20 | physics_only           loss=0.00±0.00  μ_err=3.810±0.401
+  PIQML_109 | D2_d1.5_w30 | combined             loss=169.61±0.00  μ_err=0.011±0.000
+  PIQML_109 | D2_d1.5_w30 | data_only            loss=31.69±0.00  μ_err=3.000±0.000
+  PIQML_109 | D2_d1.5_w30 | physics_only         loss=0.00±0.00  μ_err=3.214±0.000
