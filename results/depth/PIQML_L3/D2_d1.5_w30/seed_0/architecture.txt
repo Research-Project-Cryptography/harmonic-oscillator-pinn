@@ -1,0 +1,9 @@
+Model: PIQML_L3
+Total trainable parameters: 73
+Layer                                    Shape                   Count
+----------------------------------------------------------------------
+input_layer.weight                       (6, 1)                      6
+input_layer.bias                         (6,)                        6
+quantum_layer.weights                    (3, 6, 3)                  54
+output_layer.weight                      (1, 6)                      6
+output_layer.bias                        (1,)                        1

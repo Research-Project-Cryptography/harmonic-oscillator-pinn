@@ -1,0 +1,979 @@
+2026-03-11 01:58:56  INFO      ============================================================
+2026-03-11 01:58:56  INFO      Starting run_all.py  |  sweeps=['main', 'component', 'noise', 'size', 'depth', 'lambda']  |  main_seeds=5  sweep_seeds=3
+2026-03-11 01:58:56  INFO      Total jobs (before skip check): 420
+2026-03-11 01:58:56  INFO      Resumable: True
+2026-03-11 01:58:56  INFO      Environment: {'python_version': '3.10.18 (main, Aug 15 2025, 13:15:58) [Clang 17.0.0 (clang-1700.0.13.5)]', 'torch_version': '2.10.0', 'pennylane_version': '0.42.3', 'numpy_version': '2.2.6', 'platform': 'macOS-26.3.1-arm64-arm-64bit', 'processor': 'arm', 'cpu_count': 12}
+2026-03-11 01:58:56  INFO      Total jobs queued: 420  (skip_existing=True)
+2026-03-11 01:58:56  INFO      RUN   PIML_2209/D1_d2_w20/s0  [main]  iters=30000
+2026-03-11 01:59:35  INFO      DONE  PIML_2209/D1_d2_w20/s0  [main]  39s
+2026-03-11 01:59:35  INFO      RUN   PIML_2209/D1_d2_w20/s1  [main]  iters=30000
+2026-03-11 02:00:13  INFO      DONE  PIML_2209/D1_d2_w20/s1  [main]  38s
+2026-03-11 02:00:13  INFO      RUN   PIML_2209/D1_d2_w20/s2  [main]  iters=30000
+2026-03-11 02:00:51  INFO      DONE  PIML_2209/D1_d2_w20/s2  [main]  38s
+2026-03-11 02:00:51  INFO      RUN   PIML_2209/D1_d2_w20/s3  [main]  iters=30000
+2026-03-11 02:01:28  INFO      DONE  PIML_2209/D1_d2_w20/s3  [main]  37s
+2026-03-11 02:01:28  INFO      RUN   PIML_2209/D1_d2_w20/s4  [main]  iters=30000
+2026-03-11 02:02:06  INFO      DONE  PIML_2209/D1_d2_w20/s4  [main]  38s
+2026-03-11 02:02:06  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [main]  iters=30000
+2026-03-11 02:02:44  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [main]  38s
+2026-03-11 02:02:44  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [main]  iters=30000
+2026-03-11 02:03:21  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [main]  37s
+2026-03-11 02:03:21  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [main]  iters=30000
+2026-03-11 02:03:58  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [main]  37s
+2026-03-11 02:03:58  INFO      RUN   PIML_2209/D2_d1.5_w30/s3  [main]  iters=30000
+2026-03-11 02:04:36  INFO      DONE  PIML_2209/D2_d1.5_w30/s3  [main]  37s
+2026-03-11 02:04:36  INFO      RUN   PIML_2209/D2_d1.5_w30/s4  [main]  iters=30000
+2026-03-11 02:05:13  INFO      DONE  PIML_2209/D2_d1.5_w30/s4  [main]  37s
+2026-03-11 02:05:13  INFO      RUN   PIML_2209/D3_d3_w30/s0  [main]  iters=30000
+2026-03-11 02:05:50  INFO      DONE  PIML_2209/D3_d3_w30/s0  [main]  37s
+2026-03-11 02:05:50  INFO      RUN   PIML_2209/D3_d3_w30/s1  [main]  iters=30000
+2026-03-11 02:06:28  INFO      DONE  PIML_2209/D3_d3_w30/s1  [main]  37s
+2026-03-11 02:06:28  INFO      RUN   PIML_2209/D3_d3_w30/s2  [main]  iters=30000
+2026-03-11 02:07:05  INFO      DONE  PIML_2209/D3_d3_w30/s2  [main]  37s
+2026-03-11 02:07:05  INFO      RUN   PIML_2209/D3_d3_w30/s3  [main]  iters=30000
+2026-03-11 02:07:41  INFO      DONE  PIML_2209/D3_d3_w30/s3  [main]  37s
+2026-03-11 02:07:41  INFO      RUN   PIML_2209/D3_d3_w30/s4  [main]  iters=30000
+2026-03-11 02:08:18  INFO      DONE  PIML_2209/D3_d3_w30/s4  [main]  36s
+2026-03-11 02:08:18  INFO      RUN   PIML_2209/D4_d4_w40/s0  [main]  iters=30000
+2026-03-11 02:08:55  INFO      DONE  PIML_2209/D4_d4_w40/s0  [main]  37s
+2026-03-11 02:08:55  INFO      RUN   PIML_2209/D4_d4_w40/s1  [main]  iters=30000
+2026-03-11 02:09:32  INFO      DONE  PIML_2209/D4_d4_w40/s1  [main]  37s
+2026-03-11 02:09:32  INFO      RUN   PIML_2209/D4_d4_w40/s2  [main]  iters=30000
+2026-03-11 02:10:09  INFO      DONE  PIML_2209/D4_d4_w40/s2  [main]  37s
+2026-03-11 02:10:09  INFO      RUN   PIML_2209/D4_d4_w40/s3  [main]  iters=30000
+2026-03-11 02:10:47  INFO      DONE  PIML_2209/D4_d4_w40/s3  [main]  37s
+2026-03-11 02:10:47  INFO      RUN   PIML_2209/D4_d4_w40/s4  [main]  iters=30000
+2026-03-11 02:11:24  INFO      DONE  PIML_2209/D4_d4_w40/s4  [main]  37s
+2026-03-11 02:11:24  INFO      RUN   PIML_2209/D1_d2_w20/s0  [component/physics_only]  iters=10000
+2026-03-11 02:11:37  INFO      DONE  PIML_2209/D1_d2_w20/s0  [component/physics_only]  12s
+2026-03-11 02:11:37  INFO      RUN   PIML_2209/D1_d2_w20/s1  [component/physics_only]  iters=10000
+2026-03-11 02:11:49  INFO      DONE  PIML_2209/D1_d2_w20/s1  [component/physics_only]  13s
+2026-03-11 02:11:49  INFO      RUN   PIML_2209/D1_d2_w20/s2  [component/physics_only]  iters=10000
+2026-03-11 02:12:02  INFO      DONE  PIML_2209/D1_d2_w20/s2  [component/physics_only]  13s
+2026-03-11 02:12:02  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [component/physics_only]  iters=10000
+2026-03-11 02:12:15  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [component/physics_only]  13s
+2026-03-11 02:12:15  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [component/physics_only]  iters=10000
+2026-03-11 02:12:27  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [component/physics_only]  13s
+2026-03-11 02:12:27  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [component/physics_only]  iters=10000
+2026-03-11 02:12:40  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [component/physics_only]  13s
+2026-03-11 02:12:40  INFO      RUN   PIML_2209/D1_d2_w20/s0  [component/data_only]  iters=10000
+2026-03-11 02:12:52  INFO      DONE  PIML_2209/D1_d2_w20/s0  [component/data_only]  12s
+2026-03-11 02:12:52  INFO      RUN   PIML_2209/D1_d2_w20/s1  [component/data_only]  iters=10000
+2026-03-11 02:13:05  INFO      DONE  PIML_2209/D1_d2_w20/s1  [component/data_only]  13s
+2026-03-11 02:13:05  INFO      RUN   PIML_2209/D1_d2_w20/s2  [component/data_only]  iters=10000
+2026-03-11 02:13:17  INFO      DONE  PIML_2209/D1_d2_w20/s2  [component/data_only]  13s
+2026-03-11 02:13:17  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [component/data_only]  iters=10000
+2026-03-11 02:13:30  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [component/data_only]  13s
+2026-03-11 02:13:30  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [component/data_only]  iters=10000
+2026-03-11 02:13:42  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [component/data_only]  12s
+2026-03-11 02:13:42  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [component/data_only]  iters=10000
+2026-03-11 02:13:55  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [component/data_only]  13s
+2026-03-11 02:13:55  INFO      RUN   PIML_2209/D1_d2_w20/s0  [component/combined]  iters=10000
+2026-03-11 02:14:07  INFO      DONE  PIML_2209/D1_d2_w20/s0  [component/combined]  13s
+2026-03-11 02:14:07  INFO      RUN   PIML_2209/D1_d2_w20/s1  [component/combined]  iters=10000
+2026-03-11 02:14:20  INFO      DONE  PIML_2209/D1_d2_w20/s1  [component/combined]  13s
+2026-03-11 02:14:20  INFO      RUN   PIML_2209/D1_d2_w20/s2  [component/combined]  iters=10000
+2026-03-11 02:14:33  INFO      DONE  PIML_2209/D1_d2_w20/s2  [component/combined]  13s
+2026-03-11 02:14:33  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [component/combined]  iters=10000
+2026-03-11 02:14:45  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [component/combined]  13s
+2026-03-11 02:14:45  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [component/combined]  iters=10000
+2026-03-11 02:14:58  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [component/combined]  13s
+2026-03-11 02:14:58  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [component/combined]  iters=10000
+2026-03-11 02:15:11  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [component/combined]  13s
+2026-03-11 02:15:11  INFO      RUN   PIML_2209/D1_d2_w20/s0  [noise/0.01]  iters=10000
+2026-03-11 02:15:23  INFO      DONE  PIML_2209/D1_d2_w20/s0  [noise/0.01]  13s
+2026-03-11 02:15:23  INFO      RUN   PIML_2209/D1_d2_w20/s1  [noise/0.01]  iters=10000
+2026-03-11 02:15:36  INFO      DONE  PIML_2209/D1_d2_w20/s1  [noise/0.01]  12s
+2026-03-11 02:15:36  INFO      RUN   PIML_2209/D1_d2_w20/s2  [noise/0.01]  iters=10000
+2026-03-11 02:15:48  INFO      DONE  PIML_2209/D1_d2_w20/s2  [noise/0.01]  13s
+2026-03-11 02:15:48  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [noise/0.01]  iters=10000
+2026-03-11 02:16:01  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [noise/0.01]  13s
+2026-03-11 02:16:01  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [noise/0.01]  iters=10000
+2026-03-11 02:16:14  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [noise/0.01]  13s
+2026-03-11 02:16:14  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [noise/0.01]  iters=10000
+2026-03-11 02:16:26  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [noise/0.01]  13s
+2026-03-11 02:16:26  INFO      RUN   PIML_2209/D1_d2_w20/s0  [noise/0.02]  iters=10000
+2026-03-11 02:16:39  INFO      DONE  PIML_2209/D1_d2_w20/s0  [noise/0.02]  13s
+2026-03-11 02:16:39  INFO      RUN   PIML_2209/D1_d2_w20/s1  [noise/0.02]  iters=10000
+2026-03-11 02:16:52  INFO      DONE  PIML_2209/D1_d2_w20/s1  [noise/0.02]  13s
+2026-03-11 02:16:52  INFO      RUN   PIML_2209/D1_d2_w20/s2  [noise/0.02]  iters=10000
+2026-03-11 02:17:04  INFO      DONE  PIML_2209/D1_d2_w20/s2  [noise/0.02]  13s
+2026-03-11 02:17:04  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [noise/0.02]  iters=10000
+2026-03-11 02:17:17  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [noise/0.02]  13s
+2026-03-11 02:17:17  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [noise/0.02]  iters=10000
+2026-03-11 02:17:30  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [noise/0.02]  13s
+2026-03-11 02:17:30  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [noise/0.02]  iters=10000
+2026-03-11 02:17:42  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [noise/0.02]  13s
+2026-03-11 02:17:42  INFO      RUN   PIML_2209/D1_d2_w20/s0  [noise/0.05]  iters=10000
+2026-03-11 02:17:55  INFO      DONE  PIML_2209/D1_d2_w20/s0  [noise/0.05]  13s
+2026-03-11 02:17:55  INFO      RUN   PIML_2209/D1_d2_w20/s1  [noise/0.05]  iters=10000
+2026-03-11 02:18:08  INFO      DONE  PIML_2209/D1_d2_w20/s1  [noise/0.05]  13s
+2026-03-11 02:18:08  INFO      RUN   PIML_2209/D1_d2_w20/s2  [noise/0.05]  iters=10000
+2026-03-11 02:18:20  INFO      DONE  PIML_2209/D1_d2_w20/s2  [noise/0.05]  13s
+2026-03-11 02:18:20  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [noise/0.05]  iters=10000
+2026-03-11 02:18:33  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [noise/0.05]  13s
+2026-03-11 02:18:33  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [noise/0.05]  iters=10000
+2026-03-11 02:18:46  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [noise/0.05]  13s
+2026-03-11 02:18:46  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [noise/0.05]  iters=10000
+2026-03-11 02:18:59  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [noise/0.05]  13s
+2026-03-11 02:18:59  INFO      RUN   PIML_2209/D1_d2_w20/s0  [size/0.25]  iters=10000
+2026-03-11 02:19:11  INFO      DONE  PIML_2209/D1_d2_w20/s0  [size/0.25]  13s
+2026-03-11 02:19:11  INFO      RUN   PIML_2209/D1_d2_w20/s1  [size/0.25]  iters=10000
+2026-03-11 02:19:24  INFO      DONE  PIML_2209/D1_d2_w20/s1  [size/0.25]  13s
+2026-03-11 02:19:24  INFO      RUN   PIML_2209/D1_d2_w20/s2  [size/0.25]  iters=10000
+2026-03-11 02:19:36  INFO      DONE  PIML_2209/D1_d2_w20/s2  [size/0.25]  12s
+2026-03-11 02:19:36  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [size/0.25]  iters=10000
+2026-03-11 02:19:49  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [size/0.25]  13s
+2026-03-11 02:19:49  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [size/0.25]  iters=10000
+2026-03-11 02:20:01  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [size/0.25]  13s
+2026-03-11 02:20:01  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [size/0.25]  iters=10000
+2026-03-11 02:20:14  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [size/0.25]  12s
+2026-03-11 02:20:14  INFO      RUN   PIML_2209/D1_d2_w20/s0  [size/0.55]  iters=10000
+2026-03-11 02:20:27  INFO      DONE  PIML_2209/D1_d2_w20/s0  [size/0.55]  13s
+2026-03-11 02:20:27  INFO      RUN   PIML_2209/D1_d2_w20/s1  [size/0.55]  iters=10000
+2026-03-11 02:20:39  INFO      DONE  PIML_2209/D1_d2_w20/s1  [size/0.55]  13s
+2026-03-11 02:20:39  INFO      RUN   PIML_2209/D1_d2_w20/s2  [size/0.55]  iters=10000
+2026-03-11 02:20:52  INFO      DONE  PIML_2209/D1_d2_w20/s2  [size/0.55]  13s
+2026-03-11 02:20:52  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [size/0.55]  iters=10000
+2026-03-11 02:21:04  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [size/0.55]  13s
+2026-03-11 02:21:04  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [size/0.55]  iters=10000
+2026-03-11 02:21:17  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [size/0.55]  13s
+2026-03-11 02:21:17  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [size/0.55]  iters=10000
+2026-03-11 02:21:30  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [size/0.55]  13s
+2026-03-11 02:21:30  INFO      RUN   PIML_2209/D1_d2_w20/s0  [size/0.8]  iters=10000
+2026-03-11 02:21:43  INFO      DONE  PIML_2209/D1_d2_w20/s0  [size/0.8]  13s
+2026-03-11 02:21:43  INFO      RUN   PIML_2209/D1_d2_w20/s1  [size/0.8]  iters=10000
+2026-03-11 02:21:56  INFO      DONE  PIML_2209/D1_d2_w20/s1  [size/0.8]  13s
+2026-03-11 02:21:56  INFO      RUN   PIML_2209/D1_d2_w20/s2  [size/0.8]  iters=10000
+2026-03-11 02:22:09  INFO      DONE  PIML_2209/D1_d2_w20/s2  [size/0.8]  13s
+2026-03-11 02:22:09  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [size/0.8]  iters=10000
+2026-03-11 02:22:21  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [size/0.8]  13s
+2026-03-11 02:22:21  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [size/0.8]  iters=10000
+2026-03-11 02:22:34  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [size/0.8]  13s
+2026-03-11 02:22:34  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [size/0.8]  iters=10000
+2026-03-11 02:22:47  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [size/0.8]  13s
+2026-03-11 02:22:47  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:22:53  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:22:53  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:23:00  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]  7s
+2026-03-11 02:23:00  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:23:06  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:23:06  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:23:13  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:23:13  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:23:19  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]  7s
+2026-03-11 02:23:19  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:23:26  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:23:26  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:23:32  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]  7s
+2026-03-11 02:23:32  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:23:39  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:23:39  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:23:45  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:23:45  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:23:52  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]  7s
+2026-03-11 02:23:52  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:23:58  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:23:58  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:24:05  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:24:05  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:11  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:11  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:17  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:17  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:24  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:24  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:30  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:30  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:37  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:37  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:24:43  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:24:43  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:24:49  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:24:49  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:24:56  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:24:56  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:25:02  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:25:02  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:25:09  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:25:09  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:25:15  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]  7s
+2026-03-11 02:25:15  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:25:22  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:25:22  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:25:28  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:25:28  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:25:35  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:25:35  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:25:41  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]  7s
+2026-03-11 02:25:41  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:25:48  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:25:48  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:25:54  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]  7s
+2026-03-11 02:25:54  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:26:01  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]  7s
+2026-03-11 02:26:01  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:07  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:07  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:14  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:14  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:20  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:20  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:26  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:26  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:33  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:33  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:26:39  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:26:39  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:26:46  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]  7s
+2026-03-11 02:26:46  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:26:52  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]  7s
+2026-03-11 02:26:52  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:26:59  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:26:59  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:27:05  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:27:05  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:27:11  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]  7s
+2026-03-11 02:27:11  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:27:18  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:27:18  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:24  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:27:24  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:31  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:27:31  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:37  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:27:37  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:44  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]  7s
+2026-03-11 02:27:44  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:50  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]  7s
+2026-03-11 02:27:50  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:27:57  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]  7s
+2026-03-11 02:27:57  INFO      RUN   PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:03  INFO      DONE  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:28:03  INFO      RUN   PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:09  INFO      DONE  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:28:09  INFO      RUN   PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:16  INFO      DONE  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:28:16  INFO      RUN   PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:22  INFO      DONE  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:28:22  INFO      RUN   PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:29  INFO      DONE  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]  7s
+2026-03-11 02:28:29  INFO      RUN   PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:28:35  INFO      DONE  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:28:35  INFO      RUN   PIML_113/D1_d2_w20/s0  [main]  iters=30000
+2026-03-11 02:29:13  INFO      DONE  PIML_113/D1_d2_w20/s0  [main]  38s
+2026-03-11 02:29:13  INFO      RUN   PIML_113/D1_d2_w20/s1  [main]  iters=30000
+2026-03-11 02:29:50  INFO      DONE  PIML_113/D1_d2_w20/s1  [main]  37s
+2026-03-11 02:29:50  INFO      RUN   PIML_113/D1_d2_w20/s2  [main]  iters=30000
+2026-03-11 02:30:27  INFO      DONE  PIML_113/D1_d2_w20/s2  [main]  37s
+2026-03-11 02:30:27  INFO      RUN   PIML_113/D1_d2_w20/s3  [main]  iters=30000
+2026-03-11 02:31:05  INFO      DONE  PIML_113/D1_d2_w20/s3  [main]  37s
+2026-03-11 02:31:05  INFO      RUN   PIML_113/D1_d2_w20/s4  [main]  iters=30000
+2026-03-11 02:31:42  INFO      DONE  PIML_113/D1_d2_w20/s4  [main]  37s
+2026-03-11 02:31:42  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [main]  iters=30000
+2026-03-11 02:32:20  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [main]  38s
+2026-03-11 02:32:20  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [main]  iters=30000
+2026-03-11 02:32:57  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [main]  38s
+2026-03-11 02:32:57  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [main]  iters=30000
+2026-03-11 02:33:35  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [main]  37s
+2026-03-11 02:33:35  INFO      RUN   PIML_113/D2_d1.5_w30/s3  [main]  iters=30000
+2026-03-11 02:34:12  INFO      DONE  PIML_113/D2_d1.5_w30/s3  [main]  37s
+2026-03-11 02:34:12  INFO      RUN   PIML_113/D2_d1.5_w30/s4  [main]  iters=30000
+2026-03-11 02:34:49  INFO      DONE  PIML_113/D2_d1.5_w30/s4  [main]  37s
+2026-03-11 02:34:49  INFO      RUN   PIML_113/D3_d3_w30/s0  [main]  iters=30000
+2026-03-11 02:35:27  INFO      DONE  PIML_113/D3_d3_w30/s0  [main]  37s
+2026-03-11 02:35:27  INFO      RUN   PIML_113/D3_d3_w30/s1  [main]  iters=30000
+2026-03-11 02:36:04  INFO      DONE  PIML_113/D3_d3_w30/s1  [main]  37s
+2026-03-11 02:36:04  INFO      RUN   PIML_113/D3_d3_w30/s2  [main]  iters=30000
+2026-03-11 02:36:41  INFO      DONE  PIML_113/D3_d3_w30/s2  [main]  37s
+2026-03-11 02:36:41  INFO      RUN   PIML_113/D3_d3_w30/s3  [main]  iters=30000
+2026-03-11 02:37:19  INFO      DONE  PIML_113/D3_d3_w30/s3  [main]  37s
+2026-03-11 02:37:19  INFO      RUN   PIML_113/D3_d3_w30/s4  [main]  iters=30000
+2026-03-11 02:37:56  INFO      DONE  PIML_113/D3_d3_w30/s4  [main]  37s
+2026-03-11 02:37:56  INFO      RUN   PIML_113/D4_d4_w40/s0  [main]  iters=30000
+2026-03-11 02:38:32  INFO      DONE  PIML_113/D4_d4_w40/s0  [main]  37s
+2026-03-11 02:38:32  INFO      RUN   PIML_113/D4_d4_w40/s1  [main]  iters=30000
+2026-03-11 02:39:09  INFO      DONE  PIML_113/D4_d4_w40/s1  [main]  37s
+2026-03-11 02:39:09  INFO      RUN   PIML_113/D4_d4_w40/s2  [main]  iters=30000
+2026-03-11 02:39:47  INFO      DONE  PIML_113/D4_d4_w40/s2  [main]  37s
+2026-03-11 02:39:47  INFO      RUN   PIML_113/D4_d4_w40/s3  [main]  iters=30000
+2026-03-11 02:40:24  INFO      DONE  PIML_113/D4_d4_w40/s3  [main]  37s
+2026-03-11 02:40:24  INFO      RUN   PIML_113/D4_d4_w40/s4  [main]  iters=30000
+2026-03-11 02:41:02  INFO      DONE  PIML_113/D4_d4_w40/s4  [main]  37s
+2026-03-11 02:41:02  INFO      RUN   PIML_113/D1_d2_w20/s0  [component/physics_only]  iters=10000
+2026-03-11 02:41:14  INFO      DONE  PIML_113/D1_d2_w20/s0  [component/physics_only]  12s
+2026-03-11 02:41:14  INFO      RUN   PIML_113/D1_d2_w20/s1  [component/physics_only]  iters=10000
+2026-03-11 02:41:27  INFO      DONE  PIML_113/D1_d2_w20/s1  [component/physics_only]  13s
+2026-03-11 02:41:27  INFO      RUN   PIML_113/D1_d2_w20/s2  [component/physics_only]  iters=10000
+2026-03-11 02:41:39  INFO      DONE  PIML_113/D1_d2_w20/s2  [component/physics_only]  13s
+2026-03-11 02:41:39  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [component/physics_only]  iters=10000
+2026-03-11 02:41:52  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [component/physics_only]  13s
+2026-03-11 02:41:52  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [component/physics_only]  iters=10000
+2026-03-11 02:42:05  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [component/physics_only]  13s
+2026-03-11 02:42:05  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [component/physics_only]  iters=10000
+2026-03-11 02:42:17  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [component/physics_only]  13s
+2026-03-11 02:42:17  INFO      RUN   PIML_113/D1_d2_w20/s0  [component/data_only]  iters=10000
+2026-03-11 02:42:30  INFO      DONE  PIML_113/D1_d2_w20/s0  [component/data_only]  13s
+2026-03-11 02:42:30  INFO      RUN   PIML_113/D1_d2_w20/s1  [component/data_only]  iters=10000
+2026-03-11 02:42:43  INFO      DONE  PIML_113/D1_d2_w20/s1  [component/data_only]  13s
+2026-03-11 02:42:43  INFO      RUN   PIML_113/D1_d2_w20/s2  [component/data_only]  iters=10000
+2026-03-11 02:42:55  INFO      DONE  PIML_113/D1_d2_w20/s2  [component/data_only]  13s
+2026-03-11 02:42:55  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [component/data_only]  iters=10000
+2026-03-11 02:43:08  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [component/data_only]  13s
+2026-03-11 02:43:08  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [component/data_only]  iters=10000
+2026-03-11 02:43:21  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [component/data_only]  13s
+2026-03-11 02:43:21  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [component/data_only]  iters=10000
+2026-03-11 02:43:34  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [component/data_only]  13s
+2026-03-11 02:43:34  INFO      RUN   PIML_113/D1_d2_w20/s0  [component/combined]  iters=10000
+2026-03-11 02:43:46  INFO      DONE  PIML_113/D1_d2_w20/s0  [component/combined]  13s
+2026-03-11 02:43:46  INFO      RUN   PIML_113/D1_d2_w20/s1  [component/combined]  iters=10000
+2026-03-11 02:43:59  INFO      DONE  PIML_113/D1_d2_w20/s1  [component/combined]  13s
+2026-03-11 02:43:59  INFO      RUN   PIML_113/D1_d2_w20/s2  [component/combined]  iters=10000
+2026-03-11 02:44:12  INFO      DONE  PIML_113/D1_d2_w20/s2  [component/combined]  13s
+2026-03-11 02:44:12  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [component/combined]  iters=10000
+2026-03-11 02:44:24  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [component/combined]  13s
+2026-03-11 02:44:24  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [component/combined]  iters=10000
+2026-03-11 02:44:37  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [component/combined]  13s
+2026-03-11 02:44:37  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [component/combined]  iters=10000
+2026-03-11 02:44:50  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [component/combined]  13s
+2026-03-11 02:44:50  INFO      RUN   PIML_113/D1_d2_w20/s0  [noise/0.01]  iters=10000
+2026-03-11 02:45:02  INFO      DONE  PIML_113/D1_d2_w20/s0  [noise/0.01]  13s
+2026-03-11 02:45:02  INFO      RUN   PIML_113/D1_d2_w20/s1  [noise/0.01]  iters=10000
+2026-03-11 02:45:15  INFO      DONE  PIML_113/D1_d2_w20/s1  [noise/0.01]  13s
+2026-03-11 02:45:15  INFO      RUN   PIML_113/D1_d2_w20/s2  [noise/0.01]  iters=10000
+2026-03-11 02:45:27  INFO      DONE  PIML_113/D1_d2_w20/s2  [noise/0.01]  13s
+2026-03-11 02:45:27  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [noise/0.01]  iters=10000
+2026-03-11 02:45:40  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [noise/0.01]  13s
+2026-03-11 02:45:40  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [noise/0.01]  iters=10000
+2026-03-11 02:45:53  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [noise/0.01]  13s
+2026-03-11 02:45:53  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [noise/0.01]  iters=10000
+2026-03-11 02:46:05  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [noise/0.01]  13s
+2026-03-11 02:46:05  INFO      RUN   PIML_113/D1_d2_w20/s0  [noise/0.02]  iters=10000
+2026-03-11 02:46:18  INFO      DONE  PIML_113/D1_d2_w20/s0  [noise/0.02]  13s
+2026-03-11 02:46:18  INFO      RUN   PIML_113/D1_d2_w20/s1  [noise/0.02]  iters=10000
+2026-03-11 02:46:31  INFO      DONE  PIML_113/D1_d2_w20/s1  [noise/0.02]  13s
+2026-03-11 02:46:31  INFO      RUN   PIML_113/D1_d2_w20/s2  [noise/0.02]  iters=10000
+2026-03-11 02:46:43  INFO      DONE  PIML_113/D1_d2_w20/s2  [noise/0.02]  13s
+2026-03-11 02:46:43  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [noise/0.02]  iters=10000
+2026-03-11 02:46:56  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [noise/0.02]  13s
+2026-03-11 02:46:56  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [noise/0.02]  iters=10000
+2026-03-11 02:47:09  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [noise/0.02]  13s
+2026-03-11 02:47:09  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [noise/0.02]  iters=10000
+2026-03-11 02:47:21  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [noise/0.02]  13s
+2026-03-11 02:47:21  INFO      RUN   PIML_113/D1_d2_w20/s0  [noise/0.05]  iters=10000
+2026-03-11 02:47:34  INFO      DONE  PIML_113/D1_d2_w20/s0  [noise/0.05]  13s
+2026-03-11 02:47:34  INFO      RUN   PIML_113/D1_d2_w20/s1  [noise/0.05]  iters=10000
+2026-03-11 02:47:47  INFO      DONE  PIML_113/D1_d2_w20/s1  [noise/0.05]  13s
+2026-03-11 02:47:47  INFO      RUN   PIML_113/D1_d2_w20/s2  [noise/0.05]  iters=10000
+2026-03-11 02:47:59  INFO      DONE  PIML_113/D1_d2_w20/s2  [noise/0.05]  13s
+2026-03-11 02:47:59  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [noise/0.05]  iters=10000
+2026-03-11 02:48:12  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [noise/0.05]  13s
+2026-03-11 02:48:12  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [noise/0.05]  iters=10000
+2026-03-11 02:48:25  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [noise/0.05]  13s
+2026-03-11 02:48:25  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [noise/0.05]  iters=10000
+2026-03-11 02:48:37  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [noise/0.05]  13s
+2026-03-11 02:48:37  INFO      RUN   PIML_113/D1_d2_w20/s0  [size/0.25]  iters=10000
+2026-03-11 02:48:50  INFO      DONE  PIML_113/D1_d2_w20/s0  [size/0.25]  13s
+2026-03-11 02:48:50  INFO      RUN   PIML_113/D1_d2_w20/s1  [size/0.25]  iters=10000
+2026-03-11 02:49:03  INFO      DONE  PIML_113/D1_d2_w20/s1  [size/0.25]  13s
+2026-03-11 02:49:03  INFO      RUN   PIML_113/D1_d2_w20/s2  [size/0.25]  iters=10000
+2026-03-11 02:49:15  INFO      DONE  PIML_113/D1_d2_w20/s2  [size/0.25]  13s
+2026-03-11 02:49:15  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [size/0.25]  iters=10000
+2026-03-11 02:49:28  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [size/0.25]  13s
+2026-03-11 02:49:28  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [size/0.25]  iters=10000
+2026-03-11 02:49:41  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [size/0.25]  13s
+2026-03-11 02:49:41  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [size/0.25]  iters=10000
+2026-03-11 02:49:53  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [size/0.25]  13s
+2026-03-11 02:49:53  INFO      RUN   PIML_113/D1_d2_w20/s0  [size/0.55]  iters=10000
+2026-03-11 02:50:06  INFO      DONE  PIML_113/D1_d2_w20/s0  [size/0.55]  13s
+2026-03-11 02:50:06  INFO      RUN   PIML_113/D1_d2_w20/s1  [size/0.55]  iters=10000
+2026-03-11 02:50:19  INFO      DONE  PIML_113/D1_d2_w20/s1  [size/0.55]  13s
+2026-03-11 02:50:19  INFO      RUN   PIML_113/D1_d2_w20/s2  [size/0.55]  iters=10000
+2026-03-11 02:50:31  INFO      DONE  PIML_113/D1_d2_w20/s2  [size/0.55]  13s
+2026-03-11 02:50:31  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [size/0.55]  iters=10000
+2026-03-11 02:50:44  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [size/0.55]  13s
+2026-03-11 02:50:44  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [size/0.55]  iters=10000
+2026-03-11 02:50:57  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [size/0.55]  13s
+2026-03-11 02:50:57  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [size/0.55]  iters=10000
+2026-03-11 02:51:09  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [size/0.55]  13s
+2026-03-11 02:51:09  INFO      RUN   PIML_113/D1_d2_w20/s0  [size/0.8]  iters=10000
+2026-03-11 02:51:22  INFO      DONE  PIML_113/D1_d2_w20/s0  [size/0.8]  13s
+2026-03-11 02:51:22  INFO      RUN   PIML_113/D1_d2_w20/s1  [size/0.8]  iters=10000
+2026-03-11 02:51:35  INFO      DONE  PIML_113/D1_d2_w20/s1  [size/0.8]  13s
+2026-03-11 02:51:35  INFO      RUN   PIML_113/D1_d2_w20/s2  [size/0.8]  iters=10000
+2026-03-11 02:51:48  INFO      DONE  PIML_113/D1_d2_w20/s2  [size/0.8]  13s
+2026-03-11 02:51:48  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [size/0.8]  iters=10000
+2026-03-11 02:52:01  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [size/0.8]  13s
+2026-03-11 02:52:01  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [size/0.8]  iters=10000
+2026-03-11 02:52:13  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [size/0.8]  13s
+2026-03-11 02:52:13  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [size/0.8]  iters=10000
+2026-03-11 02:52:26  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [size/0.8]  13s
+2026-03-11 02:52:26  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:52:32  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:52:32  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:52:39  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:52:39  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:52:45  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]  7s
+2026-03-11 02:52:45  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:52:52  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:52:52  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:52:58  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:52:58  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]  iters=5000
+2026-03-11 02:53:05  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]  6s
+2026-03-11 02:53:05  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:11  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:11  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:17  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:17  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:24  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:24  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:30  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:30  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:37  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:37  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]  iters=5000
+2026-03-11 02:53:43  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]  6s
+2026-03-11 02:53:43  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:53:50  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:53:50  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:53:56  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:53:56  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:54:02  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:54:02  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:54:09  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:54:09  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:54:15  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:54:15  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]  iters=5000
+2026-03-11 02:54:22  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]  6s
+2026-03-11 02:54:22  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:54:28  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]  7s
+2026-03-11 02:54:28  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:54:34  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:54:34  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:54:41  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:54:41  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:54:47  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:54:47  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:54:54  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]  6s
+2026-03-11 02:54:54  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]  iters=5000
+2026-03-11 02:55:00  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]  7s
+2026-03-11 02:55:00  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:07  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:55:07  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:13  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]  7s
+2026-03-11 02:55:13  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:20  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:55:20  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:26  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:55:26  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:33  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]  7s
+2026-03-11 02:55:33  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]  iters=5000
+2026-03-11 02:55:39  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]  6s
+2026-03-11 02:55:39  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:55:46  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:55:46  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:55:52  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:55:52  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:55:58  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:55:58  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:56:05  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:56:05  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:56:11  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:56:11  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]  iters=5000
+2026-03-11 02:56:18  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]  6s
+2026-03-11 02:56:18  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:24  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:56:24  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:30  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:56:30  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:37  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:56:37  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:43  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]  7s
+2026-03-11 02:56:43  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:50  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:56:50  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]  iters=5000
+2026-03-11 02:56:56  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]  6s
+2026-03-11 02:56:56  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:03  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:57:03  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:09  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]  7s
+2026-03-11 02:57:09  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:16  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:57:16  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:22  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:57:22  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:29  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]  7s
+2026-03-11 02:57:29  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]  iters=5000
+2026-03-11 02:57:35  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]  6s
+2026-03-11 02:57:35  INFO      RUN   PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:57:42  INFO      DONE  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:57:42  INFO      RUN   PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:57:48  INFO      DONE  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:57:48  INFO      RUN   PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:57:54  INFO      DONE  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:57:54  INFO      RUN   PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:58:01  INFO      DONE  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]  7s
+2026-03-11 02:58:01  INFO      RUN   PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:58:07  INFO      DONE  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:58:07  INFO      RUN   PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]  iters=5000
+2026-03-11 02:58:14  INFO      DONE  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]  6s
+2026-03-11 02:58:14  INFO      RUN   PIQML_109/D1_d2_w20/s0  [main]  iters=30000
+2026-03-11 04:08:52  INFO      DONE  PIQML_109/D1_d2_w20/s0  [main]  4238s
+2026-03-11 04:08:52  INFO      RUN   PIQML_109/D1_d2_w20/s1  [main]  iters=30000
+2026-03-11 05:19:28  INFO      DONE  PIQML_109/D1_d2_w20/s1  [main]  4236s
+2026-03-11 05:19:28  INFO      RUN   PIQML_109/D1_d2_w20/s2  [main]  iters=30000
+2026-03-11 06:30:10  INFO      DONE  PIQML_109/D1_d2_w20/s2  [main]  4241s
+2026-03-11 06:30:10  INFO      RUN   PIQML_109/D1_d2_w20/s3  [main]  iters=30000
+2026-03-11 07:40:52  INFO      DONE  PIQML_109/D1_d2_w20/s3  [main]  4242s
+2026-03-11 07:40:52  INFO      RUN   PIQML_109/D1_d2_w20/s4  [main]  iters=30000
+2026-03-11 08:51:29  INFO      DONE  PIQML_109/D1_d2_w20/s4  [main]  4237s
+2026-03-11 08:51:29  INFO      RUN   PIQML_109/D2_d1.5_w30/s0  [main]  iters=30000
+2026-03-11 10:02:08  INFO      DONE  PIQML_109/D2_d1.5_w30/s0  [main]  4240s
+2026-03-11 10:02:08  INFO      RUN   PIQML_109/D2_d1.5_w30/s1  [main]  iters=30000
+2026-03-11 11:12:47  INFO      DONE  PIQML_109/D2_d1.5_w30/s1  [main]  4238s
+2026-03-11 11:12:47  INFO      RUN   PIQML_109/D2_d1.5_w30/s2  [main]  iters=30000
+2026-03-11 12:23:25  INFO      DONE  PIQML_109/D2_d1.5_w30/s2  [main]  4239s
+2026-03-11 12:23:25  INFO      RUN   PIQML_109/D2_d1.5_w30/s3  [main]  iters=30000
+2026-03-11 13:33:13  INFO      DONE  PIQML_109/D2_d1.5_w30/s3  [main]  4188s
+2026-03-11 13:33:13  INFO      RUN   PIQML_109/D2_d1.5_w30/s4  [main]  iters=30000
+2026-03-11 14:44:03  INFO      DONE  PIQML_109/D2_d1.5_w30/s4  [main]  4250s
+2026-03-11 14:44:03  INFO      RUN   PIQML_109/D3_d3_w30/s0  [main]  iters=30000
+2026-03-11 15:54:46  INFO      DONE  PIQML_109/D3_d3_w30/s0  [main]  4243s
+2026-03-11 15:54:46  INFO      RUN   PIQML_109/D3_d3_w30/s1  [main]  iters=30000
+2026-03-11 17:05:29  INFO      DONE  PIQML_109/D3_d3_w30/s1  [main]  4243s
+2026-03-11 17:05:29  INFO      RUN   PIQML_109/D3_d3_w30/s2  [main]  iters=30000
+2026-03-11 18:16:14  INFO      DONE  PIQML_109/D3_d3_w30/s2  [main]  4245s
+2026-03-11 18:16:14  INFO      RUN   PIQML_109/D3_d3_w30/s3  [main]  iters=30000
+2026-03-11 19:27:03  INFO      DONE  PIQML_109/D3_d3_w30/s3  [main]  4249s
+2026-03-11 19:27:03  INFO      RUN   PIQML_109/D3_d3_w30/s4  [main]  iters=30000
+2026-03-11 20:35:56  INFO      DONE  PIQML_109/D3_d3_w30/s4  [main]  4132s
+2026-03-11 20:35:56  INFO      RUN   PIQML_109/D4_d4_w40/s0  [main]  iters=30000
+2026-03-11 21:44:56  INFO      DONE  PIQML_109/D4_d4_w40/s0  [main]  4140s
+2026-03-11 21:44:56  INFO      RUN   PIQML_109/D4_d4_w40/s1  [main]  iters=30000
+2026-03-13 09:31:12  INFO      ============================================================
+2026-03-13 09:31:12  INFO      Starting run_all.py  |  sweeps=['main', 'component', 'noise', 'size', 'depth', 'lambda']  |  main_seeds=5  sweep_seeds=3
+2026-03-13 09:31:12  INFO      Total jobs (before skip check): 420
+2026-03-13 09:31:12  INFO      Resumable: True
+2026-03-13 09:31:12  INFO      Environment: {'python_version': '3.10.18 (main, Aug 15 2025, 13:15:58) [Clang 17.0.0 (clang-1700.0.13.5)]', 'torch_version': '2.10.0', 'pennylane_version': '0.42.3', 'numpy_version': '2.2.6', 'platform': 'macOS-26.3.1-arm64-arm-64bit', 'processor': 'arm', 'cpu_count': 12}
+2026-03-13 09:31:12  INFO      Total jobs queued: 420  (skip_existing=True)
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s3  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s4  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s3  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s4  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D3_d3_w30/s0  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D3_d3_w30/s1  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D3_d3_w30/s2  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D3_d3_w30/s3  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D3_d3_w30/s4  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D4_d4_w40/s0  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D4_d4_w40/s1  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D4_d4_w40/s2  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D4_d4_w40/s3  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D4_d4_w40/s4  [main]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [component/physics_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [component/data_only]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [component/combined]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [component/combined]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [component/combined]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [component/combined]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [component/combined]
+2026-03-13 09:31:12  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_2209/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D3_d3_w30/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D3_d3_w30/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D3_d3_w30/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D3_d3_w30/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D3_d3_w30/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D4_d4_w40/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D4_d4_w40/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D4_d4_w40/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D4_d4_w40/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D4_d4_w40/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [noise/0.05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [size/0.25]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [size/0.55]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [size/0.8]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIML_113/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D3_d3_w30/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D3_d3_w30/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D3_d3_w30/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D3_d3_w30/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D3_d3_w30/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D4_d4_w40/s0  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D4_d4_w40/s1  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D4_d4_w40/s2  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D4_d4_w40/s3  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D4_d4_w40/s4  [main]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [component/physics_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [component/data_only]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [component/combined]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [noise/0.01]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [noise/0.02]
+2026-03-13 09:31:13  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [noise/0.02]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [noise/0.02]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [noise/0.05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [size/0.25]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [size/0.55]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [size/0.8]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D1_d2_w20/s0  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D1_d2_w20/s1  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D1_d2_w20/s2  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D2_d1.5_w30/s0  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D2_d1.5_w30/s1  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L1/D2_d1.5_w30/s2  [depth/L1]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D1_d2_w20/s0  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D1_d2_w20/s1  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D1_d2_w20/s2  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D2_d1.5_w30/s0  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D2_d1.5_w30/s1  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L2/D2_d1.5_w30/s2  [depth/L2]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D1_d2_w20/s0  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D1_d2_w20/s1  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D1_d2_w20/s2  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D2_d1.5_w30/s0  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D2_d1.5_w30/s1  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L3/D2_d1.5_w30/s2  [depth/L3]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D1_d2_w20/s0  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D1_d2_w20/s1  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D1_d2_w20/s2  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D2_d1.5_w30/s0  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D2_d1.5_w30/s1  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L5/D2_d1.5_w30/s2  [depth/L5]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D1_d2_w20/s0  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D1_d2_w20/s1  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D1_d2_w20/s2  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D2_d1.5_w30/s0  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D2_d1.5_w30/s1  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L7/D2_d1.5_w30/s2  [depth/L7]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D1_d2_w20/s0  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D1_d2_w20/s1  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D1_d2_w20/s2  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D2_d1.5_w30/s0  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D2_d1.5_w30/s1  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_L10/D2_d1.5_w30/s2  [depth/L10]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e-01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+00_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+03]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+05]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D1_d2_w20/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s0  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s1  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      SKIP  PIQML_109/D2_d1.5_w30/s2  [lambda/l3_1e+01_l4_1e+07]
+2026-03-13 09:31:14  INFO      ============================================================
+2026-03-13 09:31:14  INFO      ALL DONE  |  ran=0  skipped=420  failed=0  |  wall time=0.00h
