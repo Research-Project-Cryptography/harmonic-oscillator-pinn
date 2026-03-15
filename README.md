@@ -1,17 +1,16 @@
 # Physics-Informed Quantum Machine Learning (PIQML) -- Harmonic Oscillator
 
-This repository contains the code for the paper *"Physics-Informed Quantum
-Machine Learning: Solving the Harmonic Oscillation PDE"*.
+This repository contains the code for the paper _"Physics-Informed Quantum
+Machine Learning: Solving the Harmonic Oscillation PDE"_.
 
 Three models are compared on underdamped harmonic oscillator PDE inference and
 parameter recovery:
 
-| Model       | Type         | Parameters |
-|-------------|-------------|------------|
-| PIQML_109   | Hybrid QNN  | 109        |
-| PIML_113    | Classical MLP | 113      |
-| PIML_2209   | Classical MLP | 2209     |
-
+| Model     | Type          | Parameters |
+| --------- | ------------- | ---------- |
+| PIQML_109 | Hybrid QNN    | 109        |
+| PIML_113  | Classical MLP | 113        |
+| PIML_2209 | Classical MLP | 2209       |
 
 ## Setup
 
@@ -60,7 +59,7 @@ pipenv run python run_all.py
 ```
 
 The run is **resumable** -- if it is interrupted, just restart it and it will
-skip any run that already has a complete `metrics.csv`.  A progress log is
+skip any run that already has a complete `metrics.csv`. A progress log is
 written to `results/run_all.log`.
 
 ```bash
@@ -98,21 +97,30 @@ pipenv run python run_experiment.py --model PIQML_109 --dataset D1 --noise-std 0
 
 Use a Dask cluster so experiment cases run on multiple machines; results are written to a **shared directory** (e.g. NFS or the same path on every worker), so they stay in one place.
 
-**1. Install:** `pipenv install dask[complete]`
+**1. Install:** `pipenv install dask[complete]`  
+On a **Linux machine that will use a GPU**, install the CUDA build of PyTorch after the rest of the deps — see [Linux GPU setup](#linux-machine-pytorch-with-gpu-cuda) below.
 
-**2. Start the scheduler** (on the machine that will drive the run and/or host workers):
+**2. Start the scheduler** (must have project on PYTHONPATH). Easiest: use the helper script from the repo root:
 
 ```bash
-dask scheduler
+cd /path/to/harmonic-oscillator-pinn
+./run_dask_scheduler.sh
 # Note the address, e.g. tcp://192.168.1.10:8786
 ```
 
-**3. Start workers** on each machine that should run tasks (including the same machine as the scheduler):
+Or manually with an **absolute** path (required on some Linux setups):  
+`PYTHONPATH=/path/to/harmonic-oscillator-pinn pipenv run dask scheduler`
+
+**3. Start workers** on each machine. Easiest: use the helper script (sets PYTHONPATH to the project root automatically):
 
 ```bash
-dask worker tcp://<SCHEDULER_IP>:8786
-# Optional: dask worker tcp://<SCHEDULER_IP>:8786 --nthreads 4
+cd /path/to/harmonic-oscillator-pinn
+./run_dask_worker.sh tcp://<SCHEDULER_IP>:8786
+# Optional: ./run_dask_worker.sh tcp://<SCHEDULER_IP>:8786 --nthreads 1
 ```
+
+Or manually with an **absolute** path:  
+`PYTHONPATH=/path/to/harmonic-oscillator-pinn pipenv run dask worker tcp://<SCHEDULER_IP>:8786`
 
 **4. Run the distributed suite** from the project directory (set `results/` to a path visible to all workers, e.g. a shared mount):
 
@@ -139,25 +147,31 @@ Resume works the same as `run_all`: jobs that already have a complete `metrics.c
    - **Mac:** System Settings → Network → Firewall → Options: allow incoming for your shell/python, or add a rule for port **8786** (and **8787** if you want the dashboard).
    - **Linux:** e.g. `sudo ufw allow 8786/tcp` then `sudo ufw reload` (if using ufw).
 
-3. **On the scheduler host (e.g. Mac):**
+3. **On the scheduler host (e.g. Mac):** start the scheduler with the project on PYTHONPATH:
+
    ```bash
    cd /path/to/harmonic-oscillator-pinn
-   dask scheduler
+   PYTHONPATH=. pipenv run dask scheduler
    ```
+
    Leave this running. Note the address (e.g. `tcp://192.168.1.10:8786`).
 
 4. **On the same machine (Mac), start a worker** in another terminal:
+
    ```bash
    cd /path/to/harmonic-oscillator-pinn
-   dask worker tcp://192.168.1.10:8786
+   PYTHONPATH=. pipenv run dask worker tcp://192.168.1.10:8786
    ```
+
    Use your actual scheduler IP.
 
-5. **On the Linux machine:** have the same project and environment (clone repo, `pipenv install`). In a terminal:
+5. **On the Linux machine:** same project and environment (clone repo, `pipenv install`). Use the worker script so PYTHONPATH is set correctly:
+
    ```bash
    cd /path/to/harmonic-oscillator-pinn
-   dask worker tcp://192.168.1.10:8786
+   ./run_dask_worker.sh tcp://192.168.1.10:8786
    ```
+
    Again use the **scheduler host’s IP** (the Mac’s IP from step 1).
 
 6. **Shared results (so both machines write to one place):**
@@ -170,6 +184,67 @@ Resume works the same as `run_all`: jobs that already have a complete `metrics.c
    export DASK_SCHEDULER_ADDRESS=tcp://192.168.1.10:8786
    pipenv run python run_all_dask.py
    ```
+
+**Worker can't find `experiment_config` on Linux:** The worker process needs the project root on `PYTHONPATH`. Use the helper script from the repo root or set `PYTHONPATH` to the **absolute** project path (see above).
+
+**Linux + GPU / `libcudnn.so.9` missing:** If the worker crashes with "libcudnn.so.9: cannot open shared object file", the loader can't find cuDNN. Either:
+
+- **Use the GPU:** Install cuDNN 9 (or the version that matches your PyTorch CUDA build) and set `LD_LIBRARY_PATH` so the worker process can find it, then start the worker, e.g.:
+  ```bash
+  export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH   # or where libcudnn.so.9 lives
+  ./run_dask_worker.sh tcp://<SCHEDULER_IP>:8786
+  ```
+  Or set `HARMONIC_CUDA_LIB` to that directory: `HARMONIC_CUDA_LIB=/usr/local/cuda/lib64 ./run_dask_worker.sh ...`
+- **Run that worker on CPU only:** Start the worker with CUDA disabled so PyTorch won't load cuDNN:  
+  `CUDA_VISIBLE_DEVICES="" ./run_dask_worker.sh tcp://<SCHEDULER_IP>:8786`
+
+**Mac vs Linux:** Each worker chooses device automatically: GPU if `torch.cuda.is_available()`, else CPU. So a Linux worker with a working CUDA/cuDNN setup will use the GPU; the Mac worker will use CPU.
+
+### Linux machine: PyTorch with GPU (CUDA)
+
+Use this only on the Linux (or WSL) machine where the Dask worker should use the GPU. The Mac can keep the default CPU-only PyTorch.
+
+1. **Check the driver and CUDA version**
+   ```bash
+   nvidia-smi
+   ```
+   Note the "CUDA Version" at the top right (e.g. 12.4). You need a driver that supports at least the CUDA version of the PyTorch build you install.
+
+2. **Install project dependencies (CPU torch first)**
+   ```bash
+   cd /path/to/harmonic-oscillator-pinn
+   pipenv install
+   ```
+
+3. **Replace PyTorch with the CUDA build**  
+   Pick the index that matches your driver (see [pytorch.org/get-started](https://pytorch.org/get-started/locally/)). Use the same torch version as in the project (see `Pipfile`; e.g. 2.10.0):
+   - CUDA 12.4: `cu124`
+   - CUDA 12.8: `cu128`
+   - CUDA 11.8: `cu118`
+   ```bash
+   pipenv run pip install torch==2.10.0 --index-url https://download.pytorch.org/whl/cu124
+   ```
+   If the exact version is not available for that CUDA, try without the version and use whatever the index provides: `pipenv run pip install torch --index-url https://download.pytorch.org/whl/cu124`
+
+4. **If you get `libcudnn.so.x` or similar errors**  
+   Set `LD_LIBRARY_PATH` so the loader finds CUDA/cuDNN (paths depend on your install; adjust if you use conda or a custom CUDA path):
+   ```bash
+   export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH
+   ```
+   Then start the worker (or set `HARMONIC_CUDA_LIB` as in the script comments). On WSL, the driver’s libs are often under the Windows NVIDIA install; if needed, add the path where `libcudnn*.so` lives.
+
+5. **Verify PyTorch CUDA**
+   ```bash
+   pipenv run python -c "import torch; print('CUDA:', torch.cuda.is_available())"
+   ```
+   You should see `CUDA: True`.
+
+6. **Use the GPU for the quantum circuit (PIQML runs)**  
+   By default the quantum part uses PennyLane’s CPU device (`default.qubit`), so Linux can be slower than Mac if the circuit is the bottleneck. To run the quantum layer on the GPU, install the Lightning-GPU plugin (Linux only, requires CUDA):
+   ```bash
+   pipenv run pip install pennylane-lightning-gpu
+   ```
+   See [PennyLane install – Lightning GPU](https://pennylane.ai/install/#high-performance-computing-and-gpus). The code will use `lightning.gpu` when `device=="cuda"` and the plugin is available; otherwise it falls back to `default.qubit`. Then start the worker with `./run_dask_worker.sh tcp://<SCHEDULER_IP>:8786`.
 
 ## Where results are saved
 
@@ -230,19 +305,19 @@ The composite loss for all models is:
 L = lambda1 * L_bc1 + lambda2 * L_bc2 + lambda3 * L_phys + lambda4 * L_data
 ```
 
-| Term     | Description                        | Default weight |
-|----------|------------------------------------|---------------|
-| L_bc1    | Boundary: x(0) = 1                | 1e5           |
-| L_bc2    | Boundary: dx/dt(0) = 0            | 1e5           |
-| L_phys   | PDE residual on collocation points | 1             |
-| L_data   | MSE on training observations       | 1e5           |
+| Term   | Description                        | Default weight |
+| ------ | ---------------------------------- | -------------- |
+| L_bc1  | Boundary: x(0) = 1                 | 1e5            |
+| L_bc2  | Boundary: dx/dt(0) = 0             | 1e5            |
+| L_phys | PDE residual on collocation points | 1              |
+| L_data | MSE on training observations       | 1e5            |
 
-The ODE assumes unit mass (m=1):  `d²x/dt² + mu * dx/dt + k * x = 0`
+The ODE assumes unit mass (m=1): `d²x/dt² + mu * dx/dt + k * x = 0`
 
 ## Datasets
 
 | Dataset | d   | w0  | mu_true | k    |
-|---------|-----|-----|---------|------|
+| ------- | --- | --- | ------- | ---- |
 | D1      | 2.0 | 20  | 4       | 400  |
 | D2      | 1.5 | 30  | 3       | 900  |
 | D3      | 3.0 | 30  | 6       | 900  |
